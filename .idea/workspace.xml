@@ -6,7 +6,9 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="803661dd-d428-423e-85cf-9e4712a95fde" name="Default Changelist" comment="" />
+    <list default="true" id="803661dd-d428-423e-85cf-9e4712a95fde" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -397,7 +399,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31801000" />
+    <option name="totallyTimeSpent" value="32130000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
