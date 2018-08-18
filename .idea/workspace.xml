@@ -7,6 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="803661dd-d428-423e-85cf-9e4712a95fde" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/hello.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -119,10 +120,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="516" />
-    <option name="y" value="40" />
+    <option name="x" value="1181" />
+    <option name="y" value="23" />
     <option name="width" value="1400" />
-    <option name="height" value="918" />
+    <option name="height" value="939" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -399,7 +400,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32027000" />
+    <option name="totallyTimeSpent" value="33382000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -411,7 +412,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="812" y="44" width="1400" height="918" extended-state="0" />
+    <frame x="1181" y="23" width="1400" height="939" extended-state="0" />
     <layout>
       <window_info content_ui="combo" x="2381" y="179" width="354" height="745" id="Project" order="0" sideWeight="0.49932885" visible="true" weight="0.17452136" />
       <window_info id="Structure" order="1" sideWeight="0.50067115" side_tool="true" weight="0.2533137" />
@@ -430,7 +431,7 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32885906" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.346247" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.33766234" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" weight="0.32885906" />
       <window_info anchor="bottom" id="Messages" order="12" />
