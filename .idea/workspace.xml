@@ -7,8 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="803661dd-d428-423e-85cf-9e4712a95fde" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/hello.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hello.txt" beforeDir="false" afterPath="$PROJECT_DIR$/hello.txt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,26 +35,29 @@
     <session id="2125376903">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="15" />
+          <entry key="project.closed" value="16" />
           <entry key="project.open.time.0" value="3" />
           <entry key="project.open.time.1" value="7" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.2" value="3" />
           <entry key="project.open.time.5" value="1" />
+          <entry key="project.open.time.8" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="16" />
+          <entry key="project.opened" value="17" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="java" value="8" />
           <entry key="jsp" value="1" />
+          <entry key="txt" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="JAVA" value="8" />
           <entry key="JSP" value="1" />
+          <entry key="PLAIN_TEXT" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -75,7 +78,13 @@
     <favorites_list name="webDemo01" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/hello.txt">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -120,8 +129,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1181" />
-    <option name="y" value="23" />
+    <option name="x" value="265" />
+    <option name="y" value="24" />
     <option name="width" value="1400" />
     <option name="height" value="939" />
   </component>
@@ -137,7 +146,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -159,6 +167,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="AndroidView" />
     </panes>
   </component>
@@ -396,11 +405,12 @@
       <workItem from="1534417010875" duration="1907000" />
       <workItem from="1534503296631" duration="1750000" />
       <workItem from="1534576256462" duration="534000" />
+      <workItem from="1534726752871" duration="630000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33382000" />
+    <option name="totallyTimeSpent" value="34405000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -412,9 +422,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1181" y="23" width="1400" height="939" extended-state="0" />
+    <frame x="265" y="24" width="1400" height="939" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" x="2381" y="179" width="354" height="745" id="Project" order="0" sideWeight="0.49932885" visible="true" weight="0.17452136" />
+      <window_info content_ui="combo" x="2381" y="179" width="354" height="745" id="Project" order="0" sideWeight="0.49932885" visible="true" weight="0.17673048" />
       <window_info id="Structure" order="1" sideWeight="0.50067115" side_tool="true" weight="0.2533137" />
       <window_info id="Web" order="2" sideWeight="0.50067115" side_tool="true" weight="0.2533137" />
       <window_info id="Image Layers" order="3" />
@@ -512,6 +522,9 @@
           <caret line="189" column="23" selection-start-line="189" selection-start-column="23" selection-end-line="189" selection-end-column="23" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hello.txt">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
   <component name="masterDetails">
