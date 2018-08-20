@@ -1,3 +1,5 @@
+package sort;
+
 public class SortPointers {
 
     public static void main(String[] args) {
