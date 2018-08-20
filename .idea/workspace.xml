@@ -8,7 +8,7 @@
   <component name="ChangeListManager">
     <list default="true" id="803661dd-d428-423e-85cf-9e4712a95fde" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hello.txt" beforeDir="false" afterPath="$PROJECT_DIR$/hello.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addTest.txt" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -48,6 +48,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="gitignore" value="2" />
           <entry key="java" value="8" />
           <entry key="jsp" value="1" />
           <entry key="txt" value="1" />
@@ -57,7 +58,7 @@
         <counts>
           <entry key="JAVA" value="8" />
           <entry key="JSP" value="1" />
-          <entry key="PLAIN_TEXT" value="1" />
+          <entry key="PLAIN_TEXT" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -80,8 +81,12 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/hello.txt">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="6" selection-start-column="6" selection-end-column="6" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -106,6 +111,7 @@
         <option value="$PROJECT_DIR$/src/HeapSort.java" />
         <option value="$PROJECT_DIR$/src/CountingSort.java" />
         <option value="$PROJECT_DIR$/src/BucketSort.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -129,8 +135,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="265" />
-    <option name="y" value="24" />
+    <option name="x" value="465" />
+    <option name="y" value="58" />
     <option name="width" value="1400" />
     <option name="height" value="939" />
   </component>
@@ -405,12 +411,12 @@
       <workItem from="1534417010875" duration="1907000" />
       <workItem from="1534503296631" duration="1750000" />
       <workItem from="1534576256462" duration="534000" />
-      <workItem from="1534726752871" duration="630000" />
+      <workItem from="1534726752871" duration="1550000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34405000" />
+    <option name="totallyTimeSpent" value="35325000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -422,7 +428,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="265" y="24" width="1400" height="939" extended-state="0" />
+    <frame x="465" y="58" width="1400" height="939" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" x="2381" y="179" width="354" height="745" id="Project" order="0" sideWeight="0.49932885" visible="true" weight="0.17673048" />
       <window_info id="Structure" order="1" sideWeight="0.50067115" side_tool="true" weight="0.2533137" />
@@ -525,6 +532,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/hello.txt">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="6" selection-start-column="6" selection-end-column="6" />
+        </state>
+      </provider>
     </entry>
   </component>
   <component name="masterDetails">
