@@ -1,25 +1,65 @@
 package newcorder;
 
-import java.util.HashSet;
-import java.util.Scanner;
-import java.util.Set;
+import java.util.*;
 
-public class Main {
-
+public class Main{
+    private static char[] mod = {'A', 'G', 'C', 'T'};
+    private static LinkedList<String> queue = new LinkedList<>();
     public static void main(String[] args) {
 
-        Scanner sc = new Scanner(System.in);
-        Set<String> set = new HashSet<String>();
-        while(sc.hasNext()) {
+        Scanner in = new Scanner(System.in);
+        while (in.hasNext()) {
+            String str = in.nextLine();
 
-            long h = sc.nextLong();
-            long ans = (long)((Math.sqrt((double)h*4+1)-1)/2);
+            Set<String> set = new HashSet<>();
+            int length = str.length();
+            for (int i=0; i<length; i++) {
+                for (int j=1; j<=6 && (i+j)<=length; j++) {
+                    set.add(str.substring(i, i+j));
+                }
+            }
+            int min = 6;
 
-
-
-            System.out.println(ans);
+            for (int i=0; i<4; i++) {
+                String s = mod[i] + "";
+                if (!set.contains(s)) {
+                    min = 1;
+                }
+                queue.add(s);
+            }
+            min = bfs(set, 2, min);
+            System.out.println(min);
+            if (queue.size() > 0) {
+                queue.pop();
+            }
         }
     }
 
+    private static int bfs(Set<String> set, int index, int min) {
+
+        if (min <= index) {
+            return min;
+        }
+        int n = queue.size();
+        if (n > 0) {
+            for (int k=0; k<n; k++) {
+                String pop = queue.pop();
+                for (int i=0; i<4; i++) {
+                    String tag = pop + mod[i];
+                    if (!set.contains(tag)) {
+                        return index;
+                    } else {
+                        queue.addLast(tag);
+                    }
+                }
+            }
+            if (index == 6) {
+                return 6;
+            }
+            min = bfs(set, index+1, min);
+        }
+
+        return min;
+    }
 
 }

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tab-Toggle</title>
+	<style>
+		*{padding:0px;margin:0px;list-style:none;}
+		#tab{margin:30px;}
+		ul li{float:left;
+			  background: #00f;
+			  color:#fff;
+			  font-weight:bold;
+			  height:30px;
+			  width: 100px;
+			  line-height:30px;
+			  margin-right:1px;
+			  padding:2px 5px;
+			  cursor:pointer;
+		}
+		#tab-content div{clear:both;
+						 display:none;
+		}
+		ul .tli{background: #0f0;
+			color:#f00;
+			font-weight:bold;
+		}
+
+		#tab-content .on{display:block;background: #0f0;width: 221px;}
+
+	</style>
+</head>
+<body>
+	<div id="tab">
+	<ul id="tab-title">
+		<li class="tli">瓜</li>
+		<li>米</li>
+	</ul>
+
+	<div id="tab-content">
+		<div class="on">西瓜，冬瓜，南瓜</div>
+		<div>大米，小米，花生米</div>
+	</div>
+	</div>
+
+	<script>
+	var tits=document.getElementById("tab-title").getElementsByTagName("li");
+	var divs=document.getElementById("tab-content").getElementsByTagName("div");
+
+	for(var i=0;i<tits.length;i++){
+		tits[i].onmouseover=function(){
+			change(this);
+		}
+	}
+
+	function change(index){
+		for(var i=0;i<tits.length;i++){
+			if(tits[i]==index){
+				tits[i].className="tli";
+				divs[i].className="on";
+			}
+			else{
+				tits[i].className="";
+				divs[i].className="";
+			}
+		}
+	}
+
+	</script>
+</body>
+</html>
