@@ -1,55 +1,68 @@
 package newcorder;
 
 
+import java.util.HashMap;
+
 public class Solution {
-    public int run(TreeNode root) {
 
-        if (root == null) {
-            return 0;
-        }
+    public static void main(String[] args) {
+        Solution solution = new Solution();
 
-        if (root.right == null) {
-            return run3(root.left) + 1;
-        } else if (root.left == null) {
-            return run3(root.right) + 1;
-        } else {
-            return run2(root);
-        }
+        int[] arr = {2, 1};
+        ListNode head = ListNode.create(arr);
+        head = solution.sortList(head);
+        ListNode.print(head);
+
     }
 
-    private int run2(TreeNode root) {
-        if (root == null) {
-            return 0;
+    public ListNode sortList(ListNode head) {
+
+        if (head == null || head.next == null) {
+            return head;
         }
-
-        if (root.right == null && root.left == null) {
-            return 1;
-        }
-
-        int depth = run(root.left);
-        depth = Math.min(depth, run(root.right));
-
-        return depth + 1;
+        ListNode midNode = getMidNode(head);
+        ListNode right = sortList(midNode.next);
+        midNode.next = null;
+        ListNode left = sortList(head);
+        return mergeList(left, right);
     }
 
-    private int run3(TreeNode root) {
-        if (root == null) {
-            return 0;
+    ListNode mergeList(ListNode left, ListNode right) {
+
+        ListNode head = new ListNode(0);
+        ListNode temp = head;
+        while (left != null && right != null) {
+            if (left.val < right.val) {
+                temp.next = left;
+                left = left.next;
+            } else {
+                temp.next = right;
+                right = right.next;
+            }
+            temp = temp.next;
+        }
+        if (left != null) {
+            temp.next = left;
+        }
+        if (right != null) {
+            temp.next = right;
         }
 
-        if (root.right == null && root.left == null) {
-            return 1;
-        }
-
-        if (root.right == null) {
-            return run3(root.left) + 1;
-        } else if (root.left == null) {
-            return run3(root.right) + 1;
-        }
-
-        int depth = run(root.left);
-        depth = Math.min(depth, run(root.right));
-
-        return depth + 1;
+        return head.next;
     }
+
+
+    ListNode getMidNode(ListNode head) {
+        if (head == null || head.next == null) {
+            return head;
+        }
+        ListNode midNode = head;
+        ListNode quickNode = head.next;
+        while (quickNode != null && quickNode.next != null) {
+            midNode = midNode.next;
+            quickNode = quickNode.next.next;
+        }
+        return midNode;
+    }
+
 }

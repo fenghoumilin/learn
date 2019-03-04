@@ -1,12 +1,5 @@
 package newcorder;
-class ListNode {
-    int val;
-    ListNode next = null;
 
-    ListNode(int val) {
-        this.val = val;
-    }
-}
 public class Plus {
     public static void main(String[] args) {
         ListNode a = new ListNode(8);
