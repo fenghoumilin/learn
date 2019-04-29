@@ -1,68 +1,77 @@
 package newcorder;
 
 
-import java.util.HashMap;
+import java.util.ArrayList;
+import java.util.Stack;
 
 public class Solution {
 
     public static void main(String[] args) {
-        Solution solution = new Solution();
 
-        int[] arr = {2, 1};
+        int[] arr = {1, 2, 3, 4, 5, 6, 7};
         ListNode head = ListNode.create(arr);
-        head = solution.sortList(head);
+        Solution solution = new Solution();
+        solution.reorderList(head);
         ListNode.print(head);
-
     }
 
-    public ListNode sortList(ListNode head) {
+
+
+    public void reorderList(ListNode head) {
 
         if (head == null || head.next == null) {
-            return head;
+            return;
         }
         ListNode midNode = getMidNode(head);
-        ListNode right = sortList(midNode.next);
-        midNode.next = null;
-        ListNode left = sortList(head);
-        return mergeList(left, right);
+        ListNode.print(midNode);
+        System.out.println("sssss");
+        ListNode.print(head);
+        System.out.println("sssss");
+        midNode = reverseList(midNode);
+        while (head != null) {
+            ListNode next = head.next;
+            head.next = midNode;
+            midNode = midNode.next;
+            head.next.next = next;
+            head = next;
+        }
+        if (midNode != null) {
+
+        }
     }
 
-    ListNode mergeList(ListNode left, ListNode right) {
-
-        ListNode head = new ListNode(0);
-        ListNode temp = head;
-        while (left != null && right != null) {
-            if (left.val < right.val) {
-                temp.next = left;
-                left = left.next;
-            } else {
-                temp.next = right;
-                right = right.next;
-            }
-            temp = temp.next;
+    private ListNode reverseList(ListNode head) {
+        ListNode pre = null;
+        while (head.next != null) {
+            ListNode next = head.next;
+            head.next = pre;
+            pre = head;
+            head = next;
         }
-        if (left != null) {
-            temp.next = left;
-        }
-        if (right != null) {
-            temp.next = right;
-        }
-
-        return head.next;
+        head.next = pre;
+        return head;
     }
 
 
-    ListNode getMidNode(ListNode head) {
-        if (head == null || head.next == null) {
+    public ListNode getMidNode(ListNode head) {
+
+        if (head == null) {
+            return null;
+        }
+        if (head.next == null) {
             return head;
         }
-        ListNode midNode = head;
+        ListNode slowNode = head;
         ListNode quickNode = head.next;
-        while (quickNode != null && quickNode.next != null) {
-            midNode = midNode.next;
+        while (quickNode.next != null && quickNode.next.next != null) {
+            slowNode = slowNode.next;
             quickNode = quickNode.next.next;
         }
-        return midNode;
-    }
 
+
+        ListNode res = slowNode.next;
+        slowNode.next = null;
+
+        return res;
+    }
 }
